@@ -60,6 +60,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Collect.cs" />
+    <Compile Include="Assets\ScoreSystem.cs" />
     <Compile Include="Assets\Script\cameraFollow.cs" />
     <Compile Include="Assets\Script\collision.cs" />
     <Compile Include="Assets\Script\playerMovement.cs" />
