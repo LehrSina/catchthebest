@@ -60,11 +60,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Collect.cs" />
-    <Compile Include="Assets\ScoreSystem.cs" />
+    <Compile Include="Assets\CameraSwitch.cs" />
     <Compile Include="Assets\Script\cameraFollow.cs" />
     <Compile Include="Assets\Script\collision.cs" />
     <Compile Include="Assets\Script\playerMovement.cs" />
+    <Compile Include="Assets\Script\ScoreSystem.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Sina/Documents/CatchTheBest/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

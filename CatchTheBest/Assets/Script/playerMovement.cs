@@ -12,7 +12,7 @@ public class playerMovement : MonoBehaviour
     void Update()
     {
         //moveing with Arrow Keys
-        transform.Translate(moveSpeed*Input.GetAxis("Horizontal") * Time.deltaTime, 0f, moveSpeed*Input.GetAxis("Vertical") * Time.deltaTime);
+        transform.Translate(moveSpeed * Input.GetAxis("Horizontal") * Time.deltaTime, 0f, moveSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
 
         //Jump
         if (Input.GetKeyDown(KeyCode.Space))
