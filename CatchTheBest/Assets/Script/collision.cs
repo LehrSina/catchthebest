@@ -8,8 +8,9 @@ public class collision : MonoBehaviour
     {
         if(col.collider.tag == "Hinderniss")  
         {
-            //movement.enabled = false;
-            Destroy(gameObject);
+            movement.enabled = false;
+            //Destroy(gameObject);
+            FindObjectOfType<GameMaster>().GameOver();
         }
 
     }

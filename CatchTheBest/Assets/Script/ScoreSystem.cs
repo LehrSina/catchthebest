@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class ScoreSystem : MonoBehaviour
 {
-    private int Score;
-    public int Leben = 1;
+    private int Score = 0;
+    private int Leben = 0;
     public float playerTime;
 
     public Text ScoreText;
@@ -19,7 +19,6 @@ public class ScoreSystem : MonoBehaviour
 
     void Start()
     {
-        Score = 0;
         SetScoreText();
 
         PlayerLiveText = GameObject.Find("PlayerLives").GetComponent<Text>();
@@ -74,21 +73,25 @@ public class ScoreSystem : MonoBehaviour
         playerDeath = true;
         if (Leben == 0)
         {
-            Destroy(GameObject.Find("Level01")); 
+            Destroy(GameObject.Find("Level01"));
             SceneManager.LoadScene("GameOver");
-       
+
         }
-        else { 
+        else
+        {
 
             this.GetComponent<MeshRenderer>().enabled = false;
             this.GetComponent<playerMovement>().enabled = false;
             this.transform.position = startposition;
-            Leben -= 1; 
+            Leben -= 1;
             PlayerLiveText.text = Leben.ToString();
-            StartCoroutine(SpawnPlayer()); 
-         }
+            StartCoroutine(SpawnPlayer());
+        }
+            
+
     }
 
+    
     //Player wird wieder sichtbar und kann bewegt werden
     IEnumerator SpawnPlayer()
     {
@@ -98,4 +101,7 @@ public class ScoreSystem : MonoBehaviour
         this.GetComponent<MeshRenderer>().enabled = true;
         this.GetComponent<playerMovement>().enabled = true;
     }
-}
+
+    
+
+    }

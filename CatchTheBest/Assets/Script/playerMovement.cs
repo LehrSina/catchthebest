@@ -3,6 +3,7 @@
 public class playerMovement : MonoBehaviour
 {
     public float moveSpeed;
+    public Rigidbody rb;
 
     void Start()
     {
@@ -21,6 +22,11 @@ public class playerMovement : MonoBehaviour
             {
                 GetComponent<Rigidbody>().AddForce(Vector3.up * 250.0f);
             }
+        }
+
+        if (rb.position.y < -1f)
+        {
+            FindObjectOfType<GameMaster>().GameOver();
         }
     }
 }
