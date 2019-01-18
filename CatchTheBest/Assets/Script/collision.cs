@@ -2,12 +2,13 @@
 
 public class collision : MonoBehaviour
 {
-    public GameObject player;
+    public playerMovement movement;
 
     private void OnCollisionEnter(Collision col)
     {
-        if(col.gameObject.name == "Hinderniss")
+        if(col.collider.tag == "Hinderniss")  
         {
+            //movement.enabled = false;
             Destroy(gameObject);
         }
 

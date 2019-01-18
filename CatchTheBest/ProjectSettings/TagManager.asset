@@ -8,6 +8,7 @@ TagManager:
   - Cube-
   - CameraOne
   - CameraTwo
+  - Hinderniss
   layers:
   - Default
   - TransparentFX
