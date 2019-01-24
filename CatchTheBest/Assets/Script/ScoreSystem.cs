@@ -43,7 +43,7 @@ public class ScoreSystem : MonoBehaviour
             }
         }
     }
-
+    
     //Score
     private void OnTriggerEnter(Collider other)
     {
@@ -66,7 +66,7 @@ public class ScoreSystem : MonoBehaviour
     {
         ScoreText.text = "Score: " + Score.ToString();
     }
-
+    
 
     void PlayerDeath()
     {
