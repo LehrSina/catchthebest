@@ -136,6 +136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 662b33ce96dd3c54bbfe816bd29e71e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Score: 0
+  Leben: 0
   playerTime: 30
   ScoreText: {fileID: 1512681646}
   PlayerLiveText: {fileID: 0}
@@ -161,6 +163,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Cube+
+      objectReference: {fileID: 0}
+    - target: {fileID: 7193806296937635240, guid: 2b600fbec746124488f6faecacb8310c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7342271819842104193, guid: 2b600fbec746124488f6faecacb8310c,
         type: 3}
@@ -315,6 +322,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Cube+
       objectReference: {fileID: 0}
+    - target: {fileID: 7193806296937635240, guid: 2b600fbec746124488f6faecacb8310c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7342271819842104193, guid: 2b600fbec746124488f6faecacb8310c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -464,6 +476,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 662b33ce96dd3c54bbfe816bd29e71e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Score: 0
+  Leben: 0
   playerTime: 30
   ScoreText: {fileID: 1512681646}
   PlayerLiveText: {fileID: 0}
@@ -489,6 +503,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Cube-
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301904537266413512, guid: 4e78cdfbc9d946d4fa59b3a952a16135,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6223152318483505221, guid: 4e78cdfbc9d946d4fa59b3a952a16135,
         type: 3}
@@ -582,6 +601,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 662b33ce96dd3c54bbfe816bd29e71e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Score: 0
+  Leben: 0
   playerTime: 30
   ScoreText: {fileID: 1512681646}
   PlayerLiveText: {fileID: 0}
@@ -681,13 +702,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 467850864}
+  - component: {fileID: 467850865}
   m_Layer: 0
   m_Name: PunkteCubes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &467850864
 Transform:
   m_ObjectHideFlags: 0
@@ -709,6 +731,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &467850865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467850863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d474abb0fd3e5834e91d732e65601546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 1951396708}
+  - {fileID: 170566423}
+  spawnValues: {x: 28, y: 0, z: 28}
+  spawnWait: 0
+  spawnMostWait: 2
+  spawnLeastWait: 5
+  startWait: 1
+  stop: 0
 --- !u!1001 &491297342
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -989,7 +1032,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557049655}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d25f588888059694f9904f24ad556c01, type: 3}
   m_Name: 
@@ -1022,6 +1065,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Cube-
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301904537266413512, guid: 4e78cdfbc9d946d4fa59b3a952a16135,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6223152318483505221, guid: 4e78cdfbc9d946d4fa59b3a952a16135,
         type: 3}
@@ -1103,6 +1151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 662b33ce96dd3c54bbfe816bd29e71e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Score: 0
+  Leben: 0
   playerTime: 30
   ScoreText: {fileID: 1512681646}
   PlayerLiveText: {fileID: 0}
@@ -1293,6 +1343,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 662b33ce96dd3c54bbfe816bd29e71e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Score: 0
+  Leben: 0
   playerTime: 30
   ScoreText: {fileID: 1512681646}
   PlayerLiveText: {fileID: 0}
@@ -1410,6 +1462,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Cube-
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301904537266413512, guid: 4e78cdfbc9d946d4fa59b3a952a16135,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6223152318483505221, guid: 4e78cdfbc9d946d4fa59b3a952a16135,
         type: 3}
@@ -1881,7 +1938,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564370468}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9af892bc486e3e54fb6d50ea8256c077, type: 3}
   m_Name: 
@@ -1898,6 +1955,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 662b33ce96dd3c54bbfe816bd29e71e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Score: 0
+  Leben: 0
   playerTime: 30
   ScoreText: {fileID: 1512681646}
   PlayerLiveText: {fileID: 0}
@@ -2030,6 +2089,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Cube+
+      objectReference: {fileID: 0}
+    - target: {fileID: 7193806296937635240, guid: 2b600fbec746124488f6faecacb8310c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7342271819842104193, guid: 2b600fbec746124488f6faecacb8310c,
         type: 3}
@@ -2208,6 +2272,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 662b33ce96dd3c54bbfe816bd29e71e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Score: 0
+  Leben: 0
   playerTime: 30
   ScoreText: {fileID: 1512681646}
   PlayerLiveText: {fileID: 0}
@@ -2411,6 +2477,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 662b33ce96dd3c54bbfe816bd29e71e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Score: 0
+  Leben: 0
   playerTime: 30
   ScoreText: {fileID: 1512681646}
   PlayerLiveText: {fileID: 0}
@@ -2568,6 +2636,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Cube+
+      objectReference: {fileID: 0}
+    - target: {fileID: 7193806296937635240, guid: 2b600fbec746124488f6faecacb8310c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7342271819842104193, guid: 2b600fbec746124488f6faecacb8310c,
         type: 3}

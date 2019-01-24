@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnerPoints : MonoBehaviour
 {
     /*
-        * https://www.youtube.com/watch?v=WGn1zvLSndk&t=2s    
+     * https://www.youtube.com/watch?v=WGn1zvLSndk&t=2s    
     */
 
 

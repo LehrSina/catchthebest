@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class ScoreSystem : MonoBehaviour
 {
-    private int Score = 0;
-    private int Leben = 0;
+    public int Score = 0;
+    public int Leben = 0;
     public float playerTime;
 
     public Text ScoreText;
