@@ -5,7 +5,13 @@ using UnityEngine;
 
 public class EndScript : MonoBehaviour
 {
-  public void restart()
+    /*
+     * Quellenangabe:
+     * https://www.youtube.com/watch?v=YdxYdHidCkE
+     * 
+     */
+
+    public void restart()
     {
         SceneManager.LoadScene("Level01");
     }

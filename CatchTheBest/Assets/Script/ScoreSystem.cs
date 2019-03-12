@@ -5,6 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class ScoreSystem : MonoBehaviour
 {
+    /*
+     * Quellenangabe:
+     * https://www.youtube.com/watch?v=D0lx90n0s-4
+     * https://www.youtube.com/watch?v=az7w9nwQRDU
+     * https://www.youtube.com/watch?v=YRCBdg7vpGQ&list=PLvO7fz6A4uxjZes3H4xRHQhP8T8qV5s9d&index=8
+     * 
+     */
+
     public int Score = 0;
     public int Leben = 0;
     public float playerTime;

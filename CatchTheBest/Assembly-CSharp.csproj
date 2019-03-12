@@ -66,8 +66,9 @@
     <Compile Include="Assets\Script\EndScript.cs" />
     <Compile Include="Assets\Script\GameMaster.cs" />
     <Compile Include="Assets\Script\playerMovement.cs" />
+    <Compile Include="Assets\Script\PowerUp.cs" />
     <Compile Include="Assets\Script\ScoreSystem.cs" />
-    <Compile Include="Assets\Script\SpawnerPoints.cs" />
+    <Compile Include="Assets\Script\Spawner.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Sina/Documents/CatchTheBest/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class CameraSwitch : MonoBehaviour
 {
+    /*
+     * Quellenangabe:
+     * https://www.youtube.com/watch?v=vZXGbTdk8gA
+     * 
+     */
+
     public Camera cameraEins;
     public Camera cameraZwei;
 
@@ -12,8 +18,8 @@ public class CameraSwitch : MonoBehaviour
     void Start()
     {
         cameraEins = (Camera)GameObject.FindGameObjectWithTag("CameraOne").GetComponent("Camera");
-        Debug.Log(cameraEins.transform.position);
-        Debug.Log("test");
+        //Debug.Log(cameraEins.transform.position);
+        //Debug.Log("test");
         cameraZwei = (Camera)GameObject.FindGameObjectWithTag("CameraTwo").GetComponent("Camera");
 
         // Initial ist CameraOne aktiv.
