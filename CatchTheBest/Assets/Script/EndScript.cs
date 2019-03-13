@@ -15,4 +15,9 @@ public class EndScript : MonoBehaviour
     {
         SceneManager.LoadScene("Level01");
     }
+
+    public void quitGame()
+    {
+        SceneManager.LoadScene("Start");
+    }
 }

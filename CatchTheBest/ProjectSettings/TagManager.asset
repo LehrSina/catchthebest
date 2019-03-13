@@ -9,6 +9,7 @@ TagManager:
   - CameraOne
   - CameraTwo
   - Hinderniss
+  - Quit
   layers:
   - Default
   - TransparentFX
